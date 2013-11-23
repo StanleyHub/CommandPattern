@@ -11,21 +11,21 @@ public class RemoteControl {
     private Light light;
     private Ceiling ceiling;
     private Stereo stereo;
-    private final Map<Integer,ICommand> onCommands;
-    private final Map<Integer,ICommand> offCommands;
+    private final Map<Integer,ICommand> getOnCommands;
+    private final Map<Integer,ICommand> getOffCommands;
 
     public RemoteControl(Light light, Ceiling ceiling, Stereo stereo)
     {
         this.light = light;
         this.ceiling = ceiling;
         this.stereo = stereo;
-        onCommands = getOnCommands();
-        offCommands = getOffCommands();
+        getOnCommands = getOnCommands();
+        getOffCommands = getOffCommands();
     }
 
     public void on(int slot)
     {
-        onCommands.get(slot).execute();
+        getOnCommands.get(slot).execute();
     }
 
     private Map<Integer, ICommand> getOnCommands() {
@@ -42,7 +42,7 @@ public class RemoteControl {
 
     public void off(int slot)
     {
-        offCommands.get(slot).execute();
+        getOffCommands.get(slot).execute();
     }
 
     private Map<Integer, ICommand> getOffCommands() {
