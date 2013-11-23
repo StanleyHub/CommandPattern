@@ -1,3 +1,4 @@
+import command.*;
 import model.Ceiling;
 import model.Light;
 import model.Stereo;
@@ -13,7 +14,9 @@ public class RemoteControlTest {
     public void should_turn_on_light_when_press_first_on_button()
     {
         Light light = new Light();
-        RemoteControl remoteControl = new RemoteControl(light, null, null);
+        final RemoteControl remoteControl = new RemoteControl();
+        remoteControl.setOnCommand(1, new LightOnCommand(light));
+
         remoteControl.on(1);
         assertTrue(light.getStatus());
     }
@@ -22,8 +25,10 @@ public class RemoteControlTest {
     public void should_turn_off_light_when_press_first_off_button()
     {
         Light light = new Light();
-        RemoteControl remoteControl = new RemoteControl(light, null, null);
+        final RemoteControl remoteControl = new RemoteControl();
+        remoteControl.setOffCommand(1, new LightOffCommand(light));
         remoteControl.off(1);
+
         assertFalse(light.getStatus());
     }
 
@@ -31,8 +36,11 @@ public class RemoteControlTest {
     public void should_turn_on_ceiling_when_press_second_on_button()
     {
         Ceiling ceiling = new Ceiling();
-        RemoteControl remoteControl = new RemoteControl(null, ceiling, null);
+        final RemoteControl remoteControl = new RemoteControl();
+        remoteControl.setOnCommand(2, new CeilingHighCommand(ceiling));
+
         remoteControl.on(2);
+
         assertEquals(Ceiling.CeilingSpeed.High, ceiling.getSpeed());
     }
 
@@ -40,8 +48,10 @@ public class RemoteControlTest {
     public void should_turn_off_ceiling_when_press_second_off_button()
     {
         Ceiling ceiling = new Ceiling();
-        RemoteControl remoteControl = new RemoteControl(null, ceiling, null);
+        final RemoteControl remoteControl = new RemoteControl();
+        remoteControl.setOffCommand(2, new CeilingOffCommand(ceiling));
         remoteControl.off(2);
+
         assertEquals(Ceiling.CeilingSpeed.Off, ceiling.getSpeed());
     }
 
@@ -49,8 +59,10 @@ public class RemoteControlTest {
     public void should_turn_on_stereo_when_press_third_on_button()
     {
         Stereo stereo = new Stereo();
-        RemoteControl remoteControl = new RemoteControl(null, null, stereo);
+        final RemoteControl remoteControl = new RemoteControl();
+        remoteControl.setOnCommand(3, new StereoOnCommand(stereo));
         remoteControl.on(3);
+
         assertTrue(stereo.getStereoStatus());
         assertTrue(stereo.getCdStatus());
         assertEquals(11, stereo.getVolume());
@@ -60,8 +72,10 @@ public class RemoteControlTest {
     public void should_turn_off_stereo_when_press_third_off_button()
     {
         Stereo stereo = new Stereo();
-        RemoteControl remoteControl = new RemoteControl(null, null, stereo);
+        final RemoteControl remoteControl = new RemoteControl();
+        remoteControl.setOffCommand(3, new StereoOffCommand(stereo));
         remoteControl.off(3);
+
         assertFalse(stereo.getCdStatus());
         assertFalse(stereo.getStereoStatus());
         assertEquals(0, stereo.getVolume());
