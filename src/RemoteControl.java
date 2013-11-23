@@ -1,8 +1,10 @@
-
 import command.*;
 import model.Ceiling;
 import model.Light;
 import model.Stereo;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class RemoteControl {
 
@@ -19,23 +21,30 @@ public class RemoteControl {
 
     public void on(int slot)
     {
-        if (slot == 1)
-            new LightOnCommand(light).execute();
-        if (slot == 2)
-            new CeilingHighCommand(ceiling).execute();
-        if (slot == 3)
-        {
-            new StereoOnCommand(stereo).execute();
-        }
+        Map<Integer, ICommand> onCommands = new HashMap<Integer, ICommand>();
+        final LightOnCommand lightOnCommand = new LightOnCommand(light);
+        final CeilingHighCommand ceilingHighCommand = new CeilingHighCommand(ceiling);
+        final StereoOnCommand stereoOnCommand = new StereoOnCommand(stereo);
+
+        onCommands.put(1, lightOnCommand);
+        onCommands.put(2, ceilingHighCommand);
+        onCommands.put(3, stereoOnCommand);
+
+        onCommands.get(slot).execute();
     }
 
     public void off(int slot)
     {
-        if (slot == 1)
-            new LightOffCommand(light).execute();
-        if (slot == 2)
-            new CeilingOffCommand(ceiling).execute();
-        if (slot == 3)
-            new StereoOffCommand(stereo).execute();
+        Map<Integer, ICommand> offCommands = new HashMap<Integer, ICommand>();
+        LightOffCommand lightOffCommand = new LightOffCommand(light);
+        CeilingOffCommand ceilingOffCommand = new CeilingOffCommand(ceiling);
+        StereoOffCommand stereoOffCommand = new StereoOffCommand(stereo);
+
+        offCommands.put(1, lightOffCommand);
+        offCommands.put(2, ceilingOffCommand);
+        offCommands.put(3, stereoOffCommand);
+
+        offCommands.get(slot).execute();
+
     }
 }
