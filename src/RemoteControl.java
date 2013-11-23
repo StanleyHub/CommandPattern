@@ -11,16 +11,24 @@ public class RemoteControl {
     private Light light;
     private Ceiling ceiling;
     private Stereo stereo;
+    private final Map<Integer,ICommand> onCommands;
+    private final Map<Integer,ICommand> offCommands;
 
     public RemoteControl(Light light, Ceiling ceiling, Stereo stereo)
     {
         this.light = light;
         this.ceiling = ceiling;
         this.stereo = stereo;
+        onCommands = getOnCommands();
+        offCommands = getOffCommands();
     }
 
     public void on(int slot)
     {
+        onCommands.get(slot).execute();
+    }
+
+    private Map<Integer, ICommand> getOnCommands() {
         Map<Integer, ICommand> onCommands = new HashMap<Integer, ICommand>();
         final LightOnCommand lightOnCommand = new LightOnCommand(light);
         final CeilingHighCommand ceilingHighCommand = new CeilingHighCommand(ceiling);
@@ -29,12 +37,15 @@ public class RemoteControl {
         onCommands.put(1, lightOnCommand);
         onCommands.put(2, ceilingHighCommand);
         onCommands.put(3, stereoOnCommand);
-
-        onCommands.get(slot).execute();
+        return onCommands;
     }
 
     public void off(int slot)
     {
+        offCommands.get(slot).execute();
+    }
+
+    private Map<Integer, ICommand> getOffCommands() {
         Map<Integer, ICommand> offCommands = new HashMap<Integer, ICommand>();
         LightOffCommand lightOffCommand = new LightOffCommand(light);
         CeilingOffCommand ceilingOffCommand = new CeilingOffCommand(ceiling);
@@ -43,8 +54,6 @@ public class RemoteControl {
         offCommands.put(1, lightOffCommand);
         offCommands.put(2, ceilingOffCommand);
         offCommands.put(3, stereoOffCommand);
-
-        offCommands.get(slot).execute();
-
+        return offCommands;
     }
 }

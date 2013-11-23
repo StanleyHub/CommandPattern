@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc0f4546-3c57-4420-a1e9-1f143cd8a1d9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RemoteControl.java" afterPath="$PROJECT_DIR$/src/RemoteControl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CommandPattern.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -15,7 +17,6 @@
     <file path="/LightOffCommand.java" changelist="fc0f4546-3c57-4420-a1e9-1f143cd8a1d9" time="1385204166168" ignored="false" />
     <file path="/CeilingOffCommand.java" changelist="fc0f4546-3c57-4420-a1e9-1f143cd8a1d9" time="1385205798840" ignored="false" />
     <file path="/StereoOffCommand.java" changelist="fc0f4546-3c57-4420-a1e9-1f143cd8a1d9" time="1385204495757" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="fc0f4546-3c57-4420-a1e9-1f143cd8a1d9" time="1385214129474" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,11 +80,11 @@
       <file leaf-file-name="RemoteControl.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/RemoteControl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="8" selection-start="459" selection-end="459" vertical-scroll-proportion="0.112426035">
+            <state line="57" column="5" selection-start="1829" selection-end="1829" vertical-scroll-proportion="0.9112426">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#506#525#0" expanded="true" />
-                <element signature="e#1041#1060#0" expanded="true" />
+                <element signature="e#789#808#0" expanded="true" />
+                <element signature="e#1412#1431#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -704,11 +705,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RemoteControl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="8" selection-start="459" selection-end="459" vertical-scroll-proportion="0.112426035">
+        <state line="57" column="5" selection-start="1829" selection-end="1829" vertical-scroll-proportion="0.9112426">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#506#525#0" expanded="true" />
-            <element signature="e#1041#1060#0" expanded="true" />
+            <element signature="e#789#808#0" expanded="true" />
+            <element signature="e#1412#1431#0" expanded="true" />
           </folding>
         </state>
       </provider>
