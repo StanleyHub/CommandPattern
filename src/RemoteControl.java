@@ -13,6 +13,8 @@ public class RemoteControl {
     private Stereo stereo;
     private final Map<Integer,ICommand> onCommands;
     private final Map<Integer,ICommand> offCommands;
+    private final Map<Integer,ICommand> onCommands1 = new HashMap<Integer, ICommand>();
+    private final Map<Integer,ICommand> offCommands1 = new HashMap<Integer, ICommand>();
 
     public RemoteControl(Light light, Ceiling ceiling, Stereo stereo)
     {
@@ -29,15 +31,15 @@ public class RemoteControl {
     }
 
     private Map<Integer, ICommand> getOnCommands() {
-        Map<Integer, ICommand> onCommands = new HashMap<Integer, ICommand>();
-        final LightOnCommand lightOnCommand = new LightOnCommand(light);
-        final CeilingHighCommand ceilingHighCommand = new CeilingHighCommand(ceiling);
-        final StereoOnCommand stereoOnCommand = new StereoOnCommand(stereo);
+        setOnCommand(1, new LightOnCommand(light));
+        setOnCommand(2, new CeilingHighCommand(ceiling));
+        setOnCommand(3, new StereoOnCommand(stereo));
 
-        onCommands.put(1, lightOnCommand);
-        onCommands.put(2, ceilingHighCommand);
-        onCommands.put(3, stereoOnCommand);
-        return onCommands;
+        return onCommands1;
+    }
+
+    private void setOnCommand(int slot, ICommand lightOnCommand) {
+        onCommands1.put(slot, lightOnCommand);
     }
 
     public void off(int slot)
@@ -46,14 +48,14 @@ public class RemoteControl {
     }
 
     private Map<Integer, ICommand> getOffCommands() {
-        Map<Integer, ICommand> offCommands = new HashMap<Integer, ICommand>();
-        LightOffCommand lightOffCommand = new LightOffCommand(light);
-        CeilingOffCommand ceilingOffCommand = new CeilingOffCommand(ceiling);
-        StereoOffCommand stereoOffCommand = new StereoOffCommand(stereo);
+        setOffCommand(1, new LightOffCommand(light));
+        setOffCommand(2, new CeilingOffCommand(ceiling));
+        setOffCommand(3, new StereoOffCommand(stereo));
 
-        offCommands.put(1, lightOffCommand);
-        offCommands.put(2, ceilingOffCommand);
-        offCommands.put(3, stereoOffCommand);
-        return offCommands;
+        return offCommands1;
+    }
+
+    private void setOffCommand(int slot, ICommand lightOffCommand) {
+        offCommands1.put(slot, lightOffCommand);
     }
 }
