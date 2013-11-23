@@ -20,22 +20,22 @@ public class RemoteControl {
     public void on(int slot)
     {
         if (slot == 1)
-            new LightOnCommand(light).lightOn();
+            new LightOnCommand(light).execute();
         if (slot == 2)
-            new CeilingHighCommand(ceiling).ceilingHigh();
+            new CeilingHighCommand(ceiling).execute();
         if (slot == 3)
         {
-            new StereoOnCommand(stereo).stereoOn();
+            new StereoOnCommand(stereo).execute();
         }
     }
 
     public void off(int slot)
     {
         if (slot == 1)
-            new LightOffCommand(light).lightOff();
+            new LightOffCommand(light).execute();
         if (slot == 2)
-            new CeilingOffCommand(ceiling).ceilingOff();
+            new CeilingOffCommand(ceiling).execute();
         if (slot == 3)
-            new StereoOffCommand(stereo).stereoOff();
+            new StereoOffCommand(stereo).execute();
     }
 }

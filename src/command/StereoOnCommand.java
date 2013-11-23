@@ -2,14 +2,15 @@ package command;
 
 import model.Stereo;
 
-public class StereoOnCommand {
+public class StereoOnCommand implements ICommand {
     public Stereo stereo;
 
     public StereoOnCommand(Stereo stereo) {
         this.stereo = stereo;
     }
 
-    public void stereoOn() {
+    @Override
+    public void execute() {
         stereo.on();
         stereo.setCd();
         stereo.setVolume(11);

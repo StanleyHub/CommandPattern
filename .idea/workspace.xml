@@ -2,25 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc0f4546-3c57-4420-a1e9-1f143cd8a1d9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/command/CeilingHighCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/command/CeilingOffCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/command/LightOffCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/command/LightOnCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/command/StereoOffCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/command/StereoOnCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/command/ICommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/command/CeilingHighCommand.java" afterPath="$PROJECT_DIR$/src/command/CeilingHighCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/command/CeilingOffCommand.java" afterPath="$PROJECT_DIR$/src/command/CeilingOffCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/command/LightOffCommand.java" afterPath="$PROJECT_DIR$/src/command/LightOffCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/command/LightOnCommand.java" afterPath="$PROJECT_DIR$/src/command/LightOnCommand.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RemoteControl.java" afterPath="$PROJECT_DIR$/src/RemoteControl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/command/StereoOffCommand.java" afterPath="$PROJECT_DIR$/src/command/StereoOffCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/command/StereoOnCommand.java" afterPath="$PROJECT_DIR$/src/command/StereoOnCommand.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CommandPattern.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="fc0f4546-3c57-4420-a1e9-1f143cd8a1d9" time="1385194956373" ignored="false" />
+    <file path="/Dummy.txt" changelist="fc0f4546-3c57-4420-a1e9-1f143cd8a1d9" time="1385205259800" ignored="false" />
     <file path="/RemoteControl.java" changelist="fc0f4546-3c57-4420-a1e9-1f143cd8a1d9" time="1385204466984" ignored="false" />
     <file path="/LightOnCommand.java" changelist="fc0f4546-3c57-4420-a1e9-1f143cd8a1d9" time="1385203684750" ignored="false" />
-    <file path="/CeilingHighCommand.java" changelist="fc0f4546-3c57-4420-a1e9-1f143cd8a1d9" time="1385203893373" ignored="false" />
+    <file path="/CeilingHighCommand.java" changelist="fc0f4546-3c57-4420-a1e9-1f143cd8a1d9" time="1385205720393" ignored="false" />
     <file path="/StereoOnCommand.java" changelist="fc0f4546-3c57-4420-a1e9-1f143cd8a1d9" time="1385204030912" ignored="false" />
-    <file path="/fragment.java" changelist="fc0f4546-3c57-4420-a1e9-1f143cd8a1d9" time="1385204434044" ignored="false" />
+    <file path="/fragment.java" changelist="fc0f4546-3c57-4420-a1e9-1f143cd8a1d9" time="1385205499688" ignored="false" />
     <file path="/LightOffCommand.java" changelist="fc0f4546-3c57-4420-a1e9-1f143cd8a1d9" time="1385204166168" ignored="false" />
-    <file path="/CeilingOffCommand.java" changelist="fc0f4546-3c57-4420-a1e9-1f143cd8a1d9" time="1385204488495" ignored="false" />
+    <file path="/CeilingOffCommand.java" changelist="fc0f4546-3c57-4420-a1e9-1f143cd8a1d9" time="1385205798840" ignored="false" />
     <file path="/StereoOffCommand.java" changelist="fc0f4546-3c57-4420-a1e9-1f143cd8a1d9" time="1385204495757" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,10 +83,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RemoteControl.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RemoteControl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RemoteControl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="45" selection-start="931" selection-end="931" vertical-scroll-proportion="0.82930297">
+            <state line="24" column="51" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,7 +97,7 @@
       <file leaf-file-name="StereoOffCommand.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/command/StereoOffCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="21" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
+            <state line="4" column="13" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -105,7 +106,7 @@
       <file leaf-file-name="CeilingOffCommand.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/command/CeilingOffCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="22" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0">
+            <state line="4" column="13" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,7 +115,7 @@
       <file leaf-file-name="LightOffCommand.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/command/LightOffCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="16" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
+            <state line="4" column="13" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -123,7 +124,7 @@
       <file leaf-file-name="StereoOnCommand.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/command/StereoOnCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="4" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0">
+            <state line="4" column="13" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -132,7 +133,16 @@
       <file leaf-file-name="CeilingHighCommand.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/command/CeilingHighCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="20" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0">
+            <state line="4" column="13" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ICommand.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/command/ICommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="17" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -141,7 +151,7 @@
       <file leaf-file-name="LightOnCommand.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/command/LightOnCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="4" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
+            <state line="4" column="13" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -156,10 +166,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RemoteControlTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="RemoteControlTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/RemoteControlTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="0" selection-start="1805" selection-end="1805" vertical-scroll-proportion="0.0">
+            <state line="57" column="0" selection-start="1805" selection-end="1805" vertical-scroll-proportion="0.90869564">
               <folding />
             </state>
           </provider>
@@ -183,13 +193,14 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/command/CeilingHighCommand.java" />
-        <option value="$PROJECT_DIR$/src/command/LightOnCommand.java" />
-        <option value="$PROJECT_DIR$/src/command/StereoOnCommand.java" />
-        <option value="$PROJECT_DIR$/src/command/LightOffCommand.java" />
         <option value="$PROJECT_DIR$/src/RemoteControl.java" />
-        <option value="$PROJECT_DIR$/src/command/CeilingOffCommand.java" />
+        <option value="$PROJECT_DIR$/src/command/StereoOnCommand.java" />
+        <option value="$PROJECT_DIR$/src/command/ICommand.java" />
+        <option value="$PROJECT_DIR$/src/command/CeilingHighCommand.java" />
+        <option value="$PROJECT_DIR$/src/command/LightOffCommand.java" />
+        <option value="$PROJECT_DIR$/src/command/LightOnCommand.java" />
         <option value="$PROJECT_DIR$/src/command/StereoOffCommand.java" />
+        <option value="$PROJECT_DIR$/src/command/CeilingOffCommand.java" />
       </list>
     </option>
   </component>
@@ -226,6 +237,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -286,24 +298,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CommandPattern" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CommandPattern" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="command" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -311,22 +305,25 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="command" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="command" />
     </key>
   </component>
@@ -414,6 +411,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -440,19 +450,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -521,32 +518,32 @@
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24605452" sideWeight="0.6777188" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32228118" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32228118" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -614,6 +611,34 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/command/LightOnCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="4" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Ceiling.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/command/StereoOnCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="4" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/RemoteControlTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="0" selection-start="1805" selection-end="1805" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Light.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="13" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
@@ -628,27 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/command/LightOnCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="4" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/command/LightOffCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/command/CeilingOffCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="22" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Stereo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="33" selection-start="274" selection-end="274" vertical-scroll-proportion="0.3200569">
@@ -656,40 +660,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/command/StereoOnCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/RemoteControl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="4" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0">
+        <state line="24" column="51" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/command/CeilingHighCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/command/CeilingOffCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/command/ICommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="17" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/command/LightOffCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/command/LightOnCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/command/StereoOffCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="21" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
+        <state line="4" column="13" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/command/StereoOnCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/RemoteControlTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="0" selection-start="1805" selection-end="1805" vertical-scroll-proportion="0.0">
+        <state line="57" column="0" selection-start="1805" selection-end="1805" vertical-scroll-proportion="0.90869564">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/command/CeilingHighCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="20" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RemoteControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="45" selection-start="931" selection-end="931" vertical-scroll-proportion="0.82930297">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

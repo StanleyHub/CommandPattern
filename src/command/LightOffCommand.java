@@ -2,14 +2,15 @@ package command;
 
 import model.Light;
 
-public class LightOffCommand {
+public class LightOffCommand implements ICommand {
     private Light light;
 
     public LightOffCommand(Light light) {
         this.light = light;
     }
 
-    public void lightOff() {
+    @Override
+    public void execute() {
         light.off();
     }
 }
