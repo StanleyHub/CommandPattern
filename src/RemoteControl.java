@@ -1,4 +1,5 @@
 
+import command.*;
 import model.Ceiling;
 import model.Light;
 import model.Stereo;
@@ -19,24 +20,22 @@ public class RemoteControl {
     public void on(int slot)
     {
         if (slot == 1)
-            light.on();
+            new LightOnCommand(light).lightOn();
         if (slot == 2)
-            ceiling.high();
+            new CeilingHighCommand(ceiling).ceilingHigh();
         if (slot == 3)
         {
-            stereo.on();
-            stereo.setCd();
-            stereo.setVolume(11);
+            new StereoOnCommand(stereo).stereoOn();
         }
     }
 
     public void off(int slot)
     {
         if (slot == 1)
-            light.off();
+            new LightOffCommand(light).lightOff();
         if (slot == 2)
-            ceiling.off();
+            new CeilingOffCommand(ceiling).ceilingOff();
         if (slot == 3)
-            stereo.off();
+            new StereoOffCommand(stereo).stereoOff();
     }
 }
