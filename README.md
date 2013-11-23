@@ -1,0 +1,4 @@
+CommandPattern
+==============
+
+Refactor to CommandPattern
